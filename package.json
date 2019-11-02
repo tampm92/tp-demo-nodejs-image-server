@@ -1,0 +1,15 @@
+{
+  "name": "tp-demo-nodejs-image-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://tampm92:nhantam43211176214@github.com/tampm92/tp-demo-nodejs-image-server.git",
+  "author": "tampm",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
