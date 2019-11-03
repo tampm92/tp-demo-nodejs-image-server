@@ -3,10 +3,13 @@ const multer = require('multer');
 const uuidv4 = require('uuid/v4');
 const sharp = require('sharp');
 const fs = require('fs')
-var path = require('path');
+const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -25,7 +28,7 @@ app.get('/', (req, res) => {
     res.send('Wellcome to image server!');
 });
 
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/upload', upload.single('files'), (req, res) => {
     if (req.file) {
         res.json(req.file);
     }
