@@ -6,7 +6,7 @@ const fs = require('fs')
 var path = require('path');
 
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
