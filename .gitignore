@@ -103,7 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
-/public/*
+/public/uploads/*.*
 
 # don't ignore keep files
 !.gitkeep
